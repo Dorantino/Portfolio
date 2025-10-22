@@ -10,7 +10,7 @@ services:
     volumes:
       - data-volume:/data/db
     environment:
-      MONGO_INITDB_DATABASE: [Database Name Here]
+      MONGO_INITDB_DATABASE: dbPortfolio
     ports:
       - "27017:27017"
     networks:
@@ -31,7 +31,7 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - mongo        
+      - mongo
     networks:
       - linkednetwork  
 
