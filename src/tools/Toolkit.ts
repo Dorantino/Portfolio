@@ -2,7 +2,7 @@
 // arguments :
 // low : number - the lowest number in the range
 // high : number - the highest number in the range
-function getRandom(low:number = 1, high:number = 10) {
+export function getRandom(low:number = 1, high:number = 10) {
     let randomNumber:number;
     // calculate random number
     randomNumber = Math.round(Math.random() * (high - low)) + low;
@@ -14,7 +14,7 @@ function getRandom(low:number = 1, high:number = 10) {
 // arguments :
 // functionToCall : function - the function to call when the key is pressed
 // keyToDetect : string - the key to detect
-function addKey(functionToCall:Function, myKeyCode:string = "Enter") {
+export function addKey(functionToCall:Function, myKeyCode:string = "Enter") {
     // this example exposes issue with scoping and event handlers and how it is solved with arrow function
 
     // wire up event listener
@@ -37,7 +37,7 @@ function addKey(functionToCall:Function, myKeyCode:string = "Enter") {
 // retrieveURL : string - the URL to retrieve the JSON data from
 // cacheExpiry : number|false - amount of time in seconds until the cached data becomes stale and needs to be re-fetched from data source. Set to 10 minutes by default. Set to 0 to disable caching. Set to false to disable caching and have data fetched once at build time.
 // debug : boolean - whether to throw an error if one occurs (default is set to true)
-async function getJSONData(retrieveScript:string, cacheExpiry:number|false = 600, debug:boolean = true) {
+export async function getJSONData(retrieveScript:string, cacheExpiry:number|false = 600, debug:boolean = true) {
     try {
         const response:Response = await fetch(retrieveScript, { next: { revalidate: cacheExpiry }});
         const data:any = await response.json();
@@ -53,24 +53,21 @@ async function getJSONData(retrieveScript:string, cacheExpiry:number|false = 600
 // arguments :
 // sendURL : string - the URL to send the JSON data to
 // sendJSON : object - the JSON data to send
+// requestType : string - the type of HTTP request to make (default is "POST")
 // debug : boolean - whether to throw an error if one occurs (default is set to true)
-async function sendJSONData(sendURL: string, sendJSON: any, debug: boolean = true) {
+export async function sendJSONData(sendURL: string, sendJSON: any, requestType:string = "POST", debug: boolean = true) {
     try {
-        const response = await fetch(sendURL, {
-            method: "POST",
+        const response:Response = await fetch(sendURL, {
+            method: requestType,
             headers: { "content-type": "application/json" },
             body: JSON.stringify(sendJSON),
             cache: 'no-store'
         });
-        // Check if the response status indicates an error - manually throw error since fetch only throws error for network issues
-        if (!response.ok) throw new Error();
-        const data:any = await response.json();
-        return data;
+        const responseData:any = await response.json();
+        return {data:responseData, status:response.status};
     } catch (error:any) {
         console.log(`>>> FETCH ERROR: ${error.message}`);
         if (debug) throw error;
         return null;
     }
 }
-
-export {getRandom, addKey, getJSONData, sendJSONData};
