@@ -10,13 +10,15 @@ const macondo = Macondo({
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur border-b border-white/10">
-            <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between align-">
+        <nav className="fixed  top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl rounded-full border border-white/30 bg-black/50 backdrop-blur-md shadow-lg hover:border-white/60 transition">
 
+            <div className="px-8 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <Link
                     href="/"
-                    className={`text-xl tracking-wide hover:opacity-80 transition ${macondo.className}`}
+                    // className={`text-xl tracking-wide hover:opacity-80 transition ${macondo.className}`}
+                    className={`text-lg tracking-widest hover:text-purple-400 transition ${macondo.className}`}
+
                 >
                     Dorantino<span className="text-purple-500">.tech</span>
                 </Link>

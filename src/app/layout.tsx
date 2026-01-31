@@ -12,7 +12,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   return (
     <html lang="en">
-      <body className="bg-neutral-950 text-white">
+      <body className="bg-gradient-to-b from-zinc-950 to-black text-white">
         {children}
       </body>
     </html>
