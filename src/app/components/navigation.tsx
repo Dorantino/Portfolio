@@ -45,6 +45,7 @@ export default function Navbar() {
 
                     <a
                         href="/Seth_Korantwi_Resume.pdf"
+                        rel="noreferrer"
                         target="_blank"
                         className="px-4 py-2 border border-white/30 rounded hover:border-purple-500 hover:text-purple-400 transition"
                     >

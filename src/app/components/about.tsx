@@ -20,7 +20,7 @@ export default function About() {
                     <p className="text-gray-400 leading-relaxed">
                         I'm Seth, a web developer who enjoys building things that live on the
                         internet. I started with simple pages and gradually moved into
-                        full-stack projects using React, Next.js, ASP.Net, PHP and various backend technologies.
+                        full-stack projects using React, Next.js, ASP.NET, PHP and various backend technologies.
                     </p>
 
                     <p className="text-gray-400 leading-relaxed">
@@ -31,8 +31,8 @@ export default function About() {
                     </p>
 
                     <p className="text-gray-400 leading-relaxed">
-                        Outside developing, you'll usually find me playing soccer, pickleball,
-                        volleyball or basketball. I'm also learning how to snowboard. Simply put, I love sports, they're some of the most therapeutic moments in my life.
+                        Outside development, you'll usually find me playing soccer, pickleball,
+                        volleyball or basketball. I'm also learning how to snowboard. Simply put, I love sports - they're some of the most therapeutic moments in my life.
                     </p>
 
                 </div>

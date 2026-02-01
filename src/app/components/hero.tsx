@@ -65,10 +65,10 @@ export default function Hero() {
                     <SiNextdotjs className="text-6xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
                     <SiTailwindcss className="text-6xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
                     <FaNodeJs className="text-6xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
-                    <SiMongodb className="text-6xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
-                    <FaGithub className="text-6xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
+                    <SiMongodb className="text-5xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
+                    <FaGithub className="text-5xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
                     <SiJavascript className="text-6xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
-                    <FaPhp className="text-6xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
+                    <FaPhp className="text-5xl opacity-60 transition hover:-translate-y-1 hover:text-purple-400" />
                 </div>
 
             </div>

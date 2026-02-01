@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Account for fixed navbar height when jumping to anchors */
+section {
+    scroll-margin-top: 3rem;
+}
+
+/* Optional: nicer default rendering */
+body {
+    background-color: black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -12,6 +12,7 @@ export default function Footer() {
                 <a
                     href="https://github.com/Dorantino"
                     target="_blank"
+                    rel="noreferrer"
                     className="flex items-center gap-2 hover:text-purple-400 transition hover:scale-105
 "
                 >
