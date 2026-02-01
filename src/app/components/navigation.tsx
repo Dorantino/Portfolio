@@ -10,7 +10,7 @@ const macondo = Macondo({
 
 export default function Navbar() {
     return (
-        <nav className="fixed  top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl rounded-full border border-white/30 bg-black/50 backdrop-blur-md shadow-lg hover:border-white/60 transition">
+        <nav className="fixed  top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl rounded-full border border-white/30 bg-black/50 backdrop-blur-md shadow-lg hover:border-white/60 transition scroll-mt-24">
 
             <div className="px-8 py-4 flex items-center justify-between">
                 {/* Logo */}

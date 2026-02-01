@@ -1,10 +1,19 @@
 "use client";
 
 import { ReactTyped } from "react-typed";
+import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section className="min-h-screen flex items-center">
+        <motion.section
+            id="home" className="h-screen flex items-center"
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            style={{ willChange: "transform, opacity" }}
+
+        >
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
                 <div className="flex flex-col justify-center space-y-6">
@@ -57,6 +66,7 @@ export default function Hero() {
 
 
             </div>
-        </section>
+        </motion.section>
+
     );
 }
