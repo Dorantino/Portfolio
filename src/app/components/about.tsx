@@ -19,7 +19,7 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
                 {/* LEFT SIDE */}
-                <div className="flex items-start">
+                <div className="flex items-center">
                     <h2 className="text-3xl md:text-6xl font-bold text-purple-500">
                         About Me
                     </h2>

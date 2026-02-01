@@ -26,22 +26,35 @@ export default function Navbar() {
                 {/* Links */}
                 <div className="flex gap-8 text-sm items-center">
 
-                    <a href="#projects" className="hover:text-purple-400 transition">
-                        Projects
-                    </a>
-
                     <a href="#about" className="hover:text-purple-400 transition">
                         About
                     </a>
 
+                    <a href="#projects" className="hover:text-purple-400 transition">
+                        Projects
+                    </a>
+
+                    <a href="#stack" className="hover:text-purple-400 transition">
+                        Stack
+                    </a>
+
+
                     <a
                         href="#contact"
-                        className="px-4 py-2 border border-white/30 rounded hover:border-purple-500 hover:text-purple-400 transition"
+                        className="hover:text-purple-400 transition"
                     >
                         Contact
                     </a>
 
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        className="px-4 py-2 border border-white/30 rounded hover:border-purple-500 hover:text-purple-400 transition"
+                    >
+                        Resume
+                    </a>
                 </div>
+
             </div>
         </nav>
     );

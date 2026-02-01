@@ -12,7 +12,7 @@ export default function Projects() {
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
 
                 {/* LEFT */}
-                <div className="flex items-start">
+                <div className="flex items-center">
                     <h2 className="text-3xl md:text-6xl font-bold text-purple-500">
                         Projects
                     </h2>
