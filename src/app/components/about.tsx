@@ -7,7 +7,7 @@ export default function About() {
     return (
         <motion.section
             id="about"
-            className="h-screen flex items-start pt-32 px-6 bg-white/5"
+            className="h-screen flex items-start pt-32 px-6"
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -19,7 +19,7 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
                 {/* LEFT SIDE */}
-                <div className="flex items-center">
+                <div className="flex items-start">
                     <h2 className="text-3xl md:text-6xl font-bold text-purple-500">
                         About Me
                     </h2>
