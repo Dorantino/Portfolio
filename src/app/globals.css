@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+section {
+    scroll-margin-top: 3rem;
+}
+
+body {
+    background-color: black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
