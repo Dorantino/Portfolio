@@ -1,19 +1,20 @@
 "use client";
 
 import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiMongodb } from "react-icons/si";
 
 export default function Projects() {
 
 
   const projects = [
     {
-      title: "Login System",
+      title: "Technology & Course Management",
       description:
-        "Full authentication flow with React and Next.js including form validation and protected routes.",
-      tech: ["react", "next", "tailwind", "node"],
+        "Full-stack application for managing technologies and courses with complete CRUD functionality using Next.js and MongoDB.",
+      tech: ["react", "next", "tailwind", "node", "mongo"]
+      ,
       github: "#",
-      live: "#",
+      live: "https://fullstack-project-3.vercel.app/",
     },
     {
       title: "Another Project",
@@ -92,6 +93,12 @@ export default function Projects() {
                     </span>
                   )}
 
+                  {project.tech.includes("mongo") && (
+                    <span className="p-2 bg-white/5 rounded-lg">
+                      <SiMongodb />
+                    </span>
+                  )}
+
                 </div>
 
                 {/* Links */}
@@ -106,6 +113,7 @@ export default function Projects() {
 
                   <a
                     href={project.live}
+                    target="_blank"
                     className="hover:text-purple-400 transition"
                   >
                     Live Demo
