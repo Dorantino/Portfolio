@@ -1,20 +1,21 @@
 "use client";
 
 import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiMongodb } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiJavascript } from "react-icons/si";
 
 export default function TechStack() {
 
     const mainStack = [
         { name: "React", icon: FaReact },
         { name: "Next.js", icon: SiNextdotjs },
+        { name: "JavaScript", icon: SiJavascript },
         { name: "Tailwind", icon: SiTailwindcss },
         { name: "Node.js", icon: FaNodeJs },
         { name: "MongoDB", icon: SiMongodb },
         { name: "GitHub", icon: FaGithub },
     ];
 
-    const secondaryStack = ["PHP", "Java", "ASP.NET", "MySQL"];
+    const secondaryStack = ["PHP", "Java", "ASP.NET", "MySQL", "Docker", "Python", "C#", "Linux", "AWS"];
 
 
     return (
