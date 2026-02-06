@@ -15,7 +15,7 @@ export default function TechStack() {
         { name: "GitHub", icon: FaGithub },
     ];
 
-    const secondaryStack = ["PHP", "Java", "ASP.NET", "MySQL", "Docker", "Python", "C#"];
+    const secondaryStack = ["PHP", "Java", "ASP.NET", "MySQL", "Docker", "Python", "C#", "Linux", "AWS"];
 
 
     return (

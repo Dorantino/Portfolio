@@ -15,7 +15,7 @@ export default function Projects() {
       tech: ["react", "next", "tailwind", "node", "mongo"],
       github: "https://github.com/Dorantino/full-stack-project-III",
       live: "https://fullstack-project-3.vercel.app/",
-      imageSrc: "/projectImages/techmanager.png",
+      imageSrc: "/projectImages/techManager.png",
       alt: "Tech manager Project screenshot",
     },
 
