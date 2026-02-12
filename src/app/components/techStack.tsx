@@ -1,7 +1,7 @@
 "use client";
 
-import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiJavascript } from "react-icons/si";
+import { FaReact, FaNodeJs, FaGithub, FaDocker } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiJavascript, SiMysql } from "react-icons/si";
 
 export default function TechStack() {
 
@@ -13,9 +13,11 @@ export default function TechStack() {
         { name: "Node.js", icon: FaNodeJs },
         { name: "MongoDB", icon: SiMongodb },
         { name: "GitHub", icon: FaGithub },
+        { name: "Docker", icon: FaDocker },
+        { name: "MySQL", icon: SiMysql },
     ];
 
-    const secondaryStack = ["PHP", "Java", "ASP.NET", "MySQL", "Docker", "Python", "C#", "Linux", "AWS"];
+    const secondaryStack = ["PHP", "Java", "ASP.NET", "Python", "C#", "Linux", "AWS", "Bootstrap", "Entity Framework", "Sass"];
 
 
     return (

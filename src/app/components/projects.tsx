@@ -1,7 +1,7 @@
 "use client";
 
-import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiMongodb } from "react-icons/si";
+import { FaReact, FaNodeJs, FaGithub, FaDatabase } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiBootstrap, SiSharp, SiDotnet, SiMysql } from "react-icons/si";
 import Image from "next/image"
 
 export default function Projects() {
@@ -28,6 +28,16 @@ export default function Projects() {
       imageSrc: "/projectImages/photoAlbum.png",
       alt: "Interactive Photo Album screenshot",
     },
+    {
+      title: "Links Manager",
+      description: "Full-stack ASP.NET Core MVC web application for managing categorized links. Features secure admin authentication, CRUD operations for categories and links, and a MySQL database powered by Entity Framework Core migrations.",
+      tech: ["asp.net", "csharp", "entityframework", "mysql", "docker", "bootstrap"],
+      github: "https://github.com/Dorantino/Links-home",
+      live: "",
+      imageSrc: "/projectImages/linksManager.png",
+      alt: "ASP.NET Core Links Manager admin dashboard",
+    }
+
   ];
 
 
@@ -111,9 +121,39 @@ export default function Projects() {
                     </span>
                   )}
 
+
+                  {project.tech?.includes("asp.net") && (
+                    <span className="p-2 bg-white/5 rounded-lg">
+                      <SiDotnet />
+                    </span>
+                  )}
+
+                  {project.tech?.includes("bootstrap") && (
+                    <span className="p-2 bg-white/5 rounded-lg">
+                      <SiBootstrap />
+                    </span>
+                  )}
+
+                  {project.tech?.includes("csharp") && (
+                    <span className="p-2 bg-white/5 rounded-lg">
+                      <SiSharp />
+                    </span>
+                  )}
+
+                  {project.tech?.includes("entityframework") && (
+                    <span className="p-2 bg-white/5 rounded-lg">
+                      <FaDatabase />
+                    </span>
+                  )}
+
+                  {project.tech?.includes("mysql") && (
+                    <span className="p-2 bg-white/5 rounded-lg">
+                      <SiMysql />
+                    </span>
+                  )}
+
                 </div>
 
-                {/* Links */}
                 <div className="flex gap-6 pt-2 text-sm">
 
                   <a
